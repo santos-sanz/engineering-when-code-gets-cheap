@@ -65,6 +65,26 @@ Aim to become the person who can take a question such as "halve this operating c
 
 ## Founder path
 
+```mermaid
+%% Source: ../assets/diagrams/founder-path.mmd
+flowchart LR
+    A["Painful, frequent,<br/>verifiable workflow"] --> B["30+ domain<br/>interviews"] --> C["3 design partners"] --> D["Manual delivery<br/>to learn exceptions"] --> E["Charge early"] --> F["Automate the observed<br/>bottleneck"] --> G["Prove retention<br/>and unit economics"] --> H["Scale distribution<br/>before headcount"]
+    I["Kill or narrow<br/>if urgency is weak"] -.-> C
+    C -. "no repeated use" .-> I
+    G -. "core still needs rescue" .-> D
+    classDef step fill:#eff6ff,stroke:#2563eb,color:#172554,stroke-width:2px;
+    classDef decision fill:#fff1f2,stroke:#e11d48,color:#881337,stroke-width:2px;
+    class A,B,C,D,E,F,G,H step;
+    class I decision;
+```
+
+<details>
+<summary>PNG export</summary>
+
+![Founder path from a verifiable workflow to scalable distribution](../assets/diagrams/founder-path.png)
+
+</details>
+
 Do not start with "agents for X". Start with expensive, frequent and verifiable work made newly tractable by agents.
 
 1. Conduct at least 30 domain interviews.
