@@ -40,6 +40,31 @@ A defect discovered after the agreed validation gate. Segment by severity. One s
 
 ## Evaluation stack
 
+```mermaid
+%% Source: ../assets/diagrams/reliability-loop.mmd
+flowchart LR
+    A["Specify<br/>task + risk budget"] --> B["Execute<br/>bounded agent run"] --> C["Verify<br/>automated checks"] --> D{"Accepted?"}
+    D -->|"yes"| E["Observe<br/>outcome + cost"]
+    D -->|"no / abstain"| F["Escalate<br/>human judgment"]
+    E --> G["Classify<br/>failures & drift"]
+    F --> G
+    G --> H["Add regression<br/>invariant or policy"]
+    H --> A
+    classDef action fill:#eff6ff,stroke:#2563eb,color:#172554,stroke-width:2px;
+    classDef gate fill:#fff7ed,stroke:#ea580c,color:#7c2d12,stroke-width:2px;
+    classDef learn fill:#ecfdf5,stroke:#059669,color:#064e3b,stroke-width:2px;
+    class A,B,C,E,F action;
+    class D gate;
+    class G,H learn;
+```
+
+<details>
+<summary>PNG export</summary>
+
+![Closed reliability loop from specification through regression learning](../assets/diagrams/reliability-loop.png)
+
+</details>
+
 Use four levels:
 
 1. **Component:** schema validity, tool selection, retrieval or classification quality.
