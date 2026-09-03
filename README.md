@@ -12,6 +12,29 @@ It does **not** assume that agents become reliable autonomous engineers on a fix
 
 Implementation is losing scarcity faster than responsibility. As code gets cheaper, value moves toward:
 
+```mermaid
+%% Source: assets/diagrams/value-migration.mmd
+flowchart LR
+    subgraph CHEAP["Losing scarcity faster"]
+      A["Boilerplate"] --> B["Standard implementation"] --> C["First-pass review"]
+    end
+    subgraph SCARCE["Compounding in value"]
+      D["Problem framing"] --> E["Constraints & invariants"] --> F["Evaluation"] --> G["Safe operation"] --> H["Outcome ownership"]
+    end
+    C -. "code gets cheaper" .-> D
+    classDef down fill:#fff1f2,stroke:#e11d48,color:#881337,stroke-width:2px;
+    classDef up fill:#ecfdf5,stroke:#059669,color:#064e3b,stroke-width:2px;
+    class A,B,C down;
+    class D,E,F,G,H up;
+```
+
+<details>
+<summary>PNG export</summary>
+
+![Value migrates from implementation toward outcome ownership](assets/diagrams/value-migration.png)
+
+</details>
+
 - choosing the right problem;
 - expressing constraints and invariants;
 - building evaluation and verification loops;
@@ -48,6 +71,26 @@ A senior engineer increasingly designs the **system that produces changes**, rat
 The target is not maximum agent activity. It is maximum **validated value per hour of human attention**, subject to explicit limits on cost, defects and risk.
 
 ## Roadmap at a glance
+
+```mermaid
+%% Source: assets/diagrams/roadmap.mmd
+flowchart LR
+    A["0 → 6 months<br/><b>Reliable operator</b><br/>Eval harness<br/>One vertical workflow"] -->|"proof: reproducible<br/>and measured"| B["6 → 15 months<br/><b>Outcome owner</b><br/>Adoption + economics<br/>SLOs + migration"] -->|"proof: sustained use<br/>and business result"| C["15 → 36 months<br/><b>Durable builder</b><br/>Domain + feedback<br/>Distribution + trust"]
+    A -.-> A1["Unit of progress:<br/>accepted result"]
+    B -.-> B1["Unit of progress:<br/>workflow outcome"]
+    C -.-> C1["Unit of progress:<br/>compounding asset"]
+    classDef phase fill:#eff6ff,stroke:#2563eb,color:#172554,stroke-width:2px;
+    classDef proof fill:#f8fafc,stroke:#64748b,color:#0f172a,stroke-dasharray: 5 5;
+    class A,B,C phase;
+    class A1,B1,C1 proof;
+```
+
+<details>
+<summary>PNG export</summary>
+
+![Three-stage roadmap from reliable operator to durable builder](assets/diagrams/roadmap.png)
+
+</details>
 
 | Horizon | Target state | Proof |
 |---|---|---|
