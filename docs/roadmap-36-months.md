@@ -28,7 +28,7 @@ flowchart TB
 <details>
 <summary>PNG export</summary>
 
-![Six compounding assets form a durable moat outside code](../assets/diagrams/personal-moat.png)
+![Six compounding assets form a durable moat outside code](../assets/diagrams/4-personal-moat.png)
 
 </details>
 
