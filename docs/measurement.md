@@ -61,7 +61,7 @@ flowchart LR
 <details>
 <summary>PNG export</summary>
 
-![Closed reliability loop from specification through regression learning](../assets/diagrams/reliability-loop.png)
+![Closed reliability loop from specification through regression learning](../assets/diagrams/6-reliability-loop.png)
 
 </details>
 
