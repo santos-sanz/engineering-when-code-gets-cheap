@@ -31,7 +31,7 @@ flowchart LR
 <details>
 <summary>PNG export</summary>
 
-![Value migrates from implementation toward outcome ownership](assets/diagrams/value-migration.png)
+![Value migrates from implementation toward outcome ownership](assets/diagrams/10-value-migration.png)
 
 </details>
 
@@ -88,7 +88,7 @@ flowchart LR
 <details>
 <summary>PNG export</summary>
 
-![Three-stage roadmap from reliable operator to durable builder](assets/diagrams/roadmap.png)
+![Three-stage roadmap from reliable operator to durable builder](assets/diagrams/8-roadmap.png)
 
 </details>
 
