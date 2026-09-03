@@ -1,0 +1,12 @@
+flowchart LR
+    subgraph CHEAP["Losing scarcity faster"]
+      A["Boilerplate"] --> B["Standard implementation"] --> C["First-pass review"]
+    end
+    subgraph SCARCE["Compounding in value"]
+      D["Problem framing"] --> E["Constraints & invariants"] --> F["Evaluation"] --> G["Safe operation"] --> H["Outcome ownership"]
+    end
+    C -. "code gets cheaper" .-> D
+    classDef down fill:#fff1f2,stroke:#e11d48,color:#881337,stroke-width:2px;
+    classDef up fill:#ecfdf5,stroke:#059669,color:#064e3b,stroke-width:2px;
+    class A,B,C down;
+    class D,E,F,G,H up;
