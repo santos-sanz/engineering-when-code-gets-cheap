@@ -81,7 +81,7 @@ flowchart LR
 <details>
 <summary>PNG export</summary>
 
-![Founder path from a verifiable workflow to scalable distribution](../assets/diagrams/founder-path.png)
+![Founder path from a verifiable workflow to scalable distribution](../assets/diagrams/2-founder-path.png)
 
 </details>
 
