@@ -6,6 +6,32 @@ At 36 months, predicting tools or model names is not useful. Under continued pro
 
 ## The personal moat
 
+```mermaid
+%% Source: ../assets/diagrams/personal-moat.mmd
+flowchart TB
+    M["Durable moat<br/><b>outside the code</b>"]
+    J["Judgment<br/>problems, limits, trade-offs"] --> M
+    D["Domain expertise<br/>economics + exceptions"] --> M
+    P["Proprietary feedback<br/>evals + production failures"] --> M
+    T["Distribution & trust<br/>access + relationships"] --> M
+    O["Operations<br/>incidents + security + cost"] --> M
+    C["Coordination<br/>teams + users + leaders"] --> M
+    M --> R["Harder to copy<br/>than implementation alone"]
+    classDef asset fill:#f5f3ff,stroke:#7c3aed,color:#2e1065,stroke-width:2px;
+    classDef core fill:#ecfdf5,stroke:#059669,color:#064e3b,stroke-width:3px;
+    classDef result fill:#fff7ed,stroke:#ea580c,color:#7c2d12,stroke-width:2px;
+    class J,D,P,T,O,C asset;
+    class M core;
+    class R result;
+```
+
+<details>
+<summary>PNG export</summary>
+
+![Six compounding assets form a durable moat outside code](../assets/diagrams/personal-moat.png)
+
+</details>
+
 "Knowing how to use agents" will not be scarce. A defensible profile compounds six assets:
 
 1. **Judgment:** a record of choosing good problems, limits and trade-offs.
